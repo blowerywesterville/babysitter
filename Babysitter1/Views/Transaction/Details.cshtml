@@ -1,0 +1,60 @@
+﻿@model Babysitter1.Models.Transaction
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FamilyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JobDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalHours)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalHours)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EarlyHours)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EarlyHours)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EveningHours)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EveningHours)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LateHours)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LateHours)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

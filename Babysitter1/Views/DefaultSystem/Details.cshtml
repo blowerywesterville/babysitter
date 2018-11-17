@@ -1,0 +1,48 @@
+﻿@model Babysitter1.Models.DefaultSystem
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DefaultSystem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MinTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MinTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaxTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Standard)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Standard)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Evening)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Evening)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LateNite)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LateNite)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
